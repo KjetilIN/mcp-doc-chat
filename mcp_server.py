@@ -1,7 +1,7 @@
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer, Context
 from pydantic import Field
 
-mcp = FastMCP("DocumentMCP", log_level="ERROR")
+mcp = MCPServer("DocumentMCP", log_level="ERROR")
 
 
 docs = {
